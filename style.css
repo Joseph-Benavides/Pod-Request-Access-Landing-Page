@@ -236,7 +236,7 @@ body {
     }
     main {
         /* margin-left: 3em; */
-        margin-bottom: 3em;
+/*         margin-bottom: 3em; */
         max-width: 1000px;
         display: flex;
         position: relative;
