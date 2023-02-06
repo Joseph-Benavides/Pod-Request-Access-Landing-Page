@@ -14,7 +14,7 @@
 This project is a preview of an early access to a podcast platform landing page. The project requires HTML, CSS & JavaScript it is also responsive to all device screen sizes.
 
 ## Design Preview
-![Design preview for the Stats article preview card component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Stats article preview card component coding challenge](./preview.jpg)
 
 Users should be able to:
 
