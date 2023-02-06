@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- CSS Style -->
+  <link rel="stylesheet" href="style.css">  
+  <title>Pod Request Access Landing Page</title>
+</head>
+<body class="page bg-img">
+  <header>
+    <div class="container">
+      <img src="./starter-code/assets/desktop/logo.svg" alt="" class="logo">
+    </div>
+  </header>
+  <main>
+    <div class="container--main">
+      <div class="main-sec">
+        <h1 class="header--main">Publish your podcasts <span class="span--main"> everywhere.</span>        
+        </h1>
+        <p class="paragraph--main">Upload your audio to Pod with a single click. We&apos;ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+      </div>
+      <div class="brand-sponsors">
+        <ul class="brand-sponsors-list">
+          <li class="brand-sponsors-list-item"><img id="spotify-pod" src="./starter-code/assets/desktop/spotify.svg" alt="Spotify Logo"></li>
+          <li class="brand-sponsors-list-item"><img id="apple-pod" src="./starter-code/assets/desktop/apple-podcast.svg" alt="Apple Podcast"></li>
+          <li class="brand-sponsors-list-item"><img id="google-pod" src="./starter-code/assets/desktop/google-podcasts.svg" alt="Google Podcasts"></li>
+          <li class="brand-sponsors-list-item"><img id="pocket-pod" src="./starter-code/assets/desktop/pocket-casts.svg" alt="Pocket Casts"></li>
+        </ul>
+      </div>
+      <form action="#" id="form" novalidate>
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="Email address">
+        <p class="empty-email">Oops! Please add your email.</p>
+        <p class="incorrect-email">Oops! Please check your email.</p>
+        <button id="btn" type="submit">Request access</button>
+      </form>      
+    </div>
+    <!-- <section class="section">
+      <img src="./starter-code/assets/tablet/image-host.jpg" alt="">
+    </section>     -->
+    <section class="sec-main-img">
+      <img class="desktop-img" src="./starter-code/assets/desktop/image-host.jpg" alt="">
+    </section>    
+  </main>
+
+  <section class="sec-img">
+    <img class="dots-img" src="./starter-code/assets/desktop/bg-pattern-dots.svg" alt="">
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>

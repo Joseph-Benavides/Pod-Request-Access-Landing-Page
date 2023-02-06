@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --neon-green-color: #54e6af;
+    --dark-grey-blue-color: #2c344b;
+    --grey-color: #535d7d;
+    --light-grey-color: #c2cbe5;
+}
+
+body {
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: column;
+    min-height: 100vh; */
+    /* background-image: url(./starter-code/assets/desktop/image-host.jpg);
+    background-color: 
+    #121725;
+    background-color: 
+    var(--dark-grey-blue-color);
+    background-color: 
+    var(--grey-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply; */
+    background-color: 
+    #121725;
+    font-family: "Chivo";
+}
+
+.page {
+    /* background-image: url(./starter-code/assets/desktop/image-host.jpg); */
+    background-color: 
+    #121725;
+    background-color: 
+    var(--dark-grey-blue-color);
+    /* background-color: 
+    var(--grey-color); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    min-height: 100vh;
+}
+
+.bg-img {
+    background-image: url(./starter-code/assets/desktop/image-host.jpg);
+}
+
+.container, .container--main {
+    margin: 0 auto;
+    padding: 1em;
+    width: 96%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Header */
+.logo {
+    margin: 4em 0 1em;
+    width: 120px;
+}
+
+/* Main */
+.header--main {
+    margin: 0.75em 0;
+    font-size: 1.85rem;
+    font-weight: 200;
+    line-height: 2.85rem;
+    text-transform: uppercase;
+    color: var(--neon-green-color);
+}
+
+.span--main {
+    color: white;
+}
+
+.paragraph--main {
+    margin: 1em 0 2em;
+    font-size: 1.15rem;
+    font-weight: 200;
+    line-height: 2rem;
+    color: var(--light-grey-color);
+}
+
+.brand-sponsors-list {
+    margin: 0em 0em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#spotify-pod, #apple-pod {
+    width: 60px;
+}
+
+#google-pod {
+    width: 100px;
+}
+
+#pocket-pod {
+    width: 80px;
+}
+
+/* Form */
+#form {
+    margin: 1em 0 3.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#email, #btn {
+    padding: 1.25em 2em;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+}
+
+#email {
+    margin: 1.5em 0;
+    font-family: 'Chivo';
+    background-color: var(--dark-grey-blue-color);
+    color: var(--neon-green-color);
+}
+
+::placeholder {
+    color: var(--light-grey-color);
+}
+
+#btn {
+    font-family: 'Chivo';
+    background-color: var(--neon-green-color);
+    transition: 0.5s ease-in-out;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: #28faa9;
+    color: black;
+    scale: 1.05;
+}
+
+.sec-img, .sec-main-img {
+    display: none;
+}
+
+/* JavaScrtipt */
+.empty-email, .incorrect-email {
+    margin: -0.5em 1em 1em;
+    color: rgb(242, 115, 115);
+    display: none;
+}
+
+/* Media Queries */
+@media (min-width: 720px) {
+    .page {
+        max-width: 800px;
+        background-image: url(./starter-code/assets/tablet/image-host.jpg);
+        background-color: #121725;
+        background-size: 455px;
+        background-position: top right;
+        background-blend-mode: unset;
+    }
+    .logo {
+        margin: 2em 0 4em;
+    }
+    .container {
+        margin: 0 3em;
+        max-width: 200px;
+        text-align: left;
+    } 
+    .container--main {
+        margin: 0em 3em;
+        padding: 2em 1em;
+        max-width: 468px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        background-color: #121725;
+    }
+    .header--main {
+        font-size: 2.15rem;
+    }
+    .paragraph--main {
+        margin: 1em 3em 1em 0em;
+        font-size: 1.1rem;
+    }
+    .brand-sponsors {
+        width: 375px;
+        order: 4;
+    }
+    #form {
+        margin: 1em 0 2.5em;
+        position: relative;
+        order: 3;
+    }
+    #email {
+        width: 88%;
+        position: relative;
+    }
+    .empty-email, .incorrect-email {
+        margin-left: 2em;
+    }
+    #btn {
+        padding: 1em 2em;
+        position: absolute;
+        top: 30px;
+        left: 200px;
+        font-size: 0.9rem;
+    }
+    .sec-img {
+        display: unset;
+    }
+    .dots-img {
+    margin: 2em 4em; 
+    }
+}
+
+@media (min-width: 1000px) {
+    .page {
+        max-width: 1135px;
+        background-image: none;
+        /* background-size: initial;
+        background-position: center right; */
+    }
+    main {
+        /* margin-left: 3em; */
+        margin-bottom: 3em;
+        max-width: 1000px;
+        display: flex;
+        position: relative;
+    }
+    .container--main {
+        max-width: 650px;
+    }
+    .header--main {
+        font-size: 2.95rem;
+        line-height: 3.5rem;
+    }
+    .sec-main-img {
+        display: unset;
+        position: absolute;
+        z-index: -1;
+        top: -8em;
+        bottom: 0;
+        left: 25em;
+        right: 0;
+    }
+    .desktop-img {
+        width: 100%;
+        height: 94%;
+    }
+    #btn {
+        left: 360px;
+    }
+    .dots-img {
+        margin: 1em 4em;
+        position: absolute;
+        top: 42em;
+        right: 0em; 
+    }
+}
+
+@media (min-width: 1100px) {
+    .desktop-img {
+        width: 115%;
+    }
+    .sec-main-img {
+        left: 28em;
+    }
+}
+
+@media (min-width: 1250px) {
+    .desktop-img {
+        width: 130%;
+    }
+    .sec-main-img {
+        left: 26em;
+    }
+}
+
+@media (min-width: 1450px) {
+    .desktop-img {
+        width: 150%;
+    }
+    .sec-main-img {
+        left: 27em;
+    }
+}
